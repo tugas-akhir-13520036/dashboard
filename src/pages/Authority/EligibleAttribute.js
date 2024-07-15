@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Box, CircularProgress, Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import { getEligibleAttributes } from '../../services/authorityApi';
-import CollapseTable from '../../components/collapseTable';
 
 const GetEligibleAttrData = () => {
   const [eligibleAttrData, setEligibleAttrData] = useState(null);

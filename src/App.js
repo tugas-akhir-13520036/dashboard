@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
-import { CssBaseline, Container, Box } from '@mui/material';
+import { CssBaseline, Box } from '@mui/material';
 import Header from './components/header';
 import Sidebar from './components/sidebar';
 import GetMerchantData from './pages/Merchant/getMerchantData';
