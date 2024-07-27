@@ -19,7 +19,8 @@ const ModifyPolicy = () => {
     setOpen(false);
 
     try {
-      const response = await modifyPolicy({ policyName, policyValue: Number(policyValue), operator });
+      const val = Number(policyValue) || policyValue;
+      const response = await modifyPolicy({ policyName, policyValue: val, operator });
       setResponseMessage(response.message || 'Channel policy updated successfully');
       setOpen(true);
     } catch (error) {
@@ -52,7 +53,6 @@ const ModifyPolicy = () => {
           label="Policy Value"
           value={policyValue}
           onChange={(e) => setPolicyValue(e.target.value)}
-          type="number"
           fullWidth
           margin="normal"
           required

@@ -54,7 +54,7 @@ const ProcessPayment = () => {
       </form>
 
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity={error ? 'error' : 'success'}>
+        <Alert onClose={handleClose} severity={error || responseMessage === 'Payment failed, access denied' ? 'error' : 'success'}>
           {error ? `Error: ${error}` : responseMessage}
         </Alert>
       </Snackbar>

@@ -37,7 +37,7 @@ const DeletePolicy = () => {
   return (
     <Container>
       <Typography variant="h4" gutterBottom>
-        Modify Channel Policy
+        Delete Channel Policy
       </Typography>
       <form onSubmit={handleSubmit}>
         <TextField
